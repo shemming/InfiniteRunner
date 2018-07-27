@@ -63,6 +63,10 @@ public class PlayerController : MonoBehaviour {
 		{
 			ani.SetBool (Constants.PlayerController.JUMP_ANIMATION, true);
 		}
+        else {
+            ani.SetBool( Constants.PlayerController.JUMP_ANIMATION, false );
+        }
+
 		// character is not moving
 		//else
 		//{

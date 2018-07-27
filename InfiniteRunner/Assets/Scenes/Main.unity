@@ -123,7 +123,7 @@ GameObject:
   - component: {fileID: 11765936}
   - component: {fileID: 11765935}
   - component: {fileID: 11765934}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: GrassJoinHillRight&Left
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -187,8 +187,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -2090524525
+  m_SortingLayer: -1
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: d086f09af8ba42045a3de55cf2912578, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -223,7 +223,7 @@ GameObject:
   - component: {fileID: 153827824}
   - component: {fileID: 153827823}
   - component: {fileID: 153827822}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: GrassJoinHillLeft
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -287,8 +287,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -2090524525
+  m_SortingLayer: -1
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: bc46245cf1d08b94d8c3697d108be68e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -399,8 +399,8 @@ GameObject:
   - component: {fileID: 905278484}
   - component: {fileID: 905278488}
   - component: {fileID: 905278489}
-  m_Layer: 0
-  m_Name: 2x_0
+  m_Layer: 8
+  m_Name: Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -437,7 +437,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!212 &905278486
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -470,10 +470,10 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 2b7f2095fd51a644395b1b79ff6105e7, type: 3}
+  m_SortingLayerID: 1940585123
+  m_SortingLayer: 1
+  m_SortingOrder: 1
+  m_Sprite: {fileID: 21300000, guid: 46a37085c77b4c54fb4349284f2cdf5b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -490,7 +490,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 905278483}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.91, y: -0.63, z: 0}
+  m_LocalPosition: {x: -3.91, y: -0.91, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -512,7 +512,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.44, y: 1.46}
+    oldSize: {x: 1.32, y: 1.43}
     newSize: {x: 1.44, y: 1.46}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -549,7 +549,7 @@ GameObject:
   - component: {fileID: 1198764599}
   - component: {fileID: 1198764598}
   - component: {fileID: 1198764597}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: GrassJoinHillRight2&Left2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -613,8 +613,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -2090524525
+  m_SortingLayer: -1
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 6680fc1910c5fe648ad31c2d9e4bb368, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -649,7 +649,7 @@ GameObject:
   - component: {fileID: 1306026992}
   - component: {fileID: 1306026991}
   - component: {fileID: 1306026990}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: GrassJoinHillLeft2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -713,8 +713,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -2090524525
+  m_SortingLayer: -1
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 7854311c734016044a4598da4fff2973, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -749,7 +749,7 @@ GameObject:
   - component: {fileID: 1393808300}
   - component: {fileID: 1393808299}
   - component: {fileID: 1393808298}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: GrassJoinHillLeft (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -813,8 +813,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -2090524525
+  m_SortingLayer: -1
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: bc46245cf1d08b94d8c3697d108be68e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
