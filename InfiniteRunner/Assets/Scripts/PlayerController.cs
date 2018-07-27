@@ -59,13 +59,10 @@ public class PlayerController : MonoBehaviour {
 	{
 
 		// if player clickes space bar, the character jumps
-        if (Input.GetKey (KeyCode.Space))
+        if (Input.GetKeyDown (KeyCode.Space))
 		{
-			ani.SetBool (Constants.PlayerController.JUMP_ANIMATION, true);
+            ani.SetTrigger( Constants.PlayerController.JUMP_ANIMATION );
 		}
-        else {
-            ani.SetBool( Constants.PlayerController.JUMP_ANIMATION, false );
-        }
 
 		// character is not moving
 		//else
