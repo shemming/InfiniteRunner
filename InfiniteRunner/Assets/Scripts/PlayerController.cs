@@ -6,15 +6,6 @@ using UnityEngine;
 /// </summary>
 public class PlayerController : MonoBehaviour {
 
-	/// <summary>
-	/// Floating point variable to store the player's movement speed.
-	/// </summary>
-	public float speed;             
-
-	/// <summary>
-	/// Store a reference to the Rigidbody2D component required to use 2D Physics.
-	/// </summary>
-	private Rigidbody2D rb2d;  
 
 	/// <summary>
 	/// Store a reference to the animator controller to animate movement
@@ -35,9 +26,6 @@ public class PlayerController : MonoBehaviour {
 	/// </date>
 	void Start()
 	{
-		//Get and store a reference to the Rigidbody2D component 
-		rb2d = GetComponent<Rigidbody2D> ();
-
 		// Get and store a reference to the animator controller
 		ani = GetComponent<Animator> ();
 	}
@@ -63,12 +51,6 @@ public class PlayerController : MonoBehaviour {
 		{
             ani.SetTrigger( Constants.PlayerController.JUMP_ANIMATION );
 		}
-
-		// character is not moving
-		//else
-		//{
-		//	ani.SetBool (Constants.PlayerController.RUN_ANIMATION, true);
-		//}
 	}
 	/* void Update() */
 
