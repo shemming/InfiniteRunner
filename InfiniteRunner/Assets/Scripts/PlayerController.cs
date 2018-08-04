@@ -10,7 +10,7 @@ public class PlayerController : MonoBehaviour {
 	/// <summary>
 	/// Store a reference to the animator controller to animate movement
 	/// </summary>
-	private Animator animator;
+	Animator animator;
 
 	/// <name>
 	/// Start
