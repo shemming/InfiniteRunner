@@ -10,7 +10,7 @@ public class PlayerController : MonoBehaviour {
 	/// <summary>
 	/// Store a reference to the animator controller to animate movement
 	/// </summary>
-	private Animator ani;
+	private Animator animator;
 
 	/// <name>
 	/// Start
@@ -27,7 +27,7 @@ public class PlayerController : MonoBehaviour {
 	void Start()
 	{
 		// Get and store a reference to the animator controller
-		ani = GetComponent<Animator> ();
+        animator = GetComponent<Animator> ();
 	}
 	/* void Start() */
 
@@ -49,7 +49,7 @@ public class PlayerController : MonoBehaviour {
 		// if player clickes space bar, the character jumps
         if (Input.GetKeyDown (KeyCode.Space))
 		{
-            ani.SetTrigger( Constants.PlayerController.JUMP_ANIMATION );
+            animator.SetTrigger( Constants.PlayerController.JUMP_ANIMATION );
 		}
 	}
 	/* void Update() */
