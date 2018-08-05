@@ -10,7 +10,6 @@ public class BackgroundScroller : MonoBehaviour
     void Start()
     {
         startPosition = transform.position;
-        Debug.Log( startPosition.ToString() );
     }
 
     void Update()
