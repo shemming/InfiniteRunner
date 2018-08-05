@@ -3,7 +3,7 @@
 public class BackgroundScroller : MonoBehaviour
 {
     public float scrollSpeed;
-    public float tileSizeZ;
+    public float tileSize;
 
     Vector3 startPosition;
 
@@ -15,7 +15,7 @@ public class BackgroundScroller : MonoBehaviour
 
     void Update()
     {
-        var newPosition = Mathf.Repeat( Time.time * scrollSpeed, tileSizeZ );
+        var newPosition = Mathf.Repeat( Time.time * scrollSpeed, tileSize );
         transform.position = startPosition + Vector3.left * newPosition;
     }
 }
