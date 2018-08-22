@@ -14,7 +14,12 @@ public class BackgroundScroller : MonoBehaviour
 
     void Update()
     {
-        var newPosition = Mathf.Repeat( Time.time * scrollSpeed, tileSize );
-        transform.position = startPosition + Vector3.left * newPosition;
+        var distance = transform.position.x < 0 ? transform.position.x * -1 : transform.position.x;
+        if (distance > tileSize) {
+            transform.position = startPosition;
+        }
+
+        transform.position = transform.position + Vector3.left * (scrollSpeed / 100);
+
     }
 }
