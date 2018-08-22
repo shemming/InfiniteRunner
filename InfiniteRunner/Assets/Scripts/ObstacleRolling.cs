@@ -3,6 +3,8 @@
 public class ObstacleRolling : MonoBehaviour
 {
 
+    public float scrollSpeed;
+
     void Awake()
     {
         ResetObstacle(transform.localPosition.x);
@@ -10,7 +12,7 @@ public class ObstacleRolling : MonoBehaviour
 
     void Update()
     {
-        transform.localPosition = transform.localPosition + Vector3.left * .085f;
+        transform.localPosition = transform.localPosition + Vector3.left * (scrollSpeed/100);
     }
 
     void OnTriggerEnter2D( Collider2D col )
@@ -18,6 +20,9 @@ public class ObstacleRolling : MonoBehaviour
         if ( col.gameObject.tag == "StopObstacle" )
         {
             ResetObstacle(14);
+        }
+        else if (col.gameObject.tag == "Player") {
+            Debug.Log("Game Over");
         }
     }
 
