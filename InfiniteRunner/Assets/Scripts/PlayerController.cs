@@ -26,8 +26,8 @@ public class PlayerController : MonoBehaviour {
 	/// </date>
 	void Start()
 	{
-		// Get and store a reference to the animator controller
-        animator = GetComponent<Animator> ();
+        // Get and store a reference to the animator controller
+        animator = GetComponent<Animator>();
 	}
 	/* void Start() */
 
@@ -51,7 +51,15 @@ public class PlayerController : MonoBehaviour {
 		{
             animator.SetTrigger( Constants.PlayerController.JUMP_ANIMATION );
 		}
-	}
+        else if ( Input.touchCount > 0 ) {
+            Touch touch = Input.GetTouch( 0 );
+            if (touch.phase == TouchPhase.Began) {
+                animator.SetTrigger( Constants.PlayerController.JUMP_ANIMATION );
+            }
+        }
+
+
+    }
 	/* void Update() */
 
 

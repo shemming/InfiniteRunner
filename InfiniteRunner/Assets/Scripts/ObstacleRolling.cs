@@ -1,13 +1,18 @@
 ﻿using UnityEngine;
+using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class ObstacleRolling : MonoBehaviour
 {
 
     public float scrollSpeed;
+    public Text scoreDisplay;
 
-    void Awake()
+
+    private void Start()
     {
-        ResetObstacle(transform.localPosition.x);
+        ResetObstacle( transform.localPosition.x );
+        int.Parse( scoreDisplay.text );
     }
 
     void Update()
@@ -17,12 +22,18 @@ public class ObstacleRolling : MonoBehaviour
 
     void OnTriggerEnter2D( Collider2D col )
     {
-        if ( col.gameObject.tag == "StopObstacle" )
+        switch ( col.gameObject.tag )
         {
-            ResetObstacle(14);
-        }
-        else if (col.gameObject.tag == "Player") {
-            Debug.Log("Game Over");
+            case "StopObstacle":
+                ResetObstacle( 14 );
+                break;
+            case "Score":
+                ApplicationModel.Instance.score += 1;
+                scoreDisplay.text = ApplicationModel.Instance.score.ToString();
+                break;
+            case "Player":
+                SceneManager.LoadScene( "GameOver", LoadSceneMode.Single );
+                break;
         }
     }
 
