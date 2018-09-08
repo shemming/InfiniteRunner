@@ -3,7 +3,11 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - StopObstacle
+  - Score
+  - Game
+  - End
   layers:
   - Default
   - TransparentFX
@@ -46,6 +50,9 @@ TagManager:
     locked: 0
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Obstacle
+    uniqueID: 4067607871
     locked: 0
   - name: Player
     uniqueID: 1940585123
